@@ -1,0 +1,271 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,3577" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="625,3512" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="CityDT" />
+      <Variable x:TypeArguments="s:String[]" Name="arrayOfTemperature" />
+      <Variable x:TypeArguments="sd:DataTable" Name="TemperatureDT" />
+      <Variable x:TypeArguments="s:String[]" Name="arrayOfDay" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DayDT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ClimateDT" />
+      <Variable x:TypeArguments="s:String[]" Name="arrayOfClimate" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="583,260" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Visible="False" WorkbookPath="WeatherReportSheet.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[CityDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
+    <ui:BuildDataTable DataTable="[TemperatureDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="583,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Temperature&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[DayDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="583,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Day&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[ClimateDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="583,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Climate&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="583,2823" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a8f4288f-096f-4d26-b134-31d280b576ad" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="549,2607" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="city" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="507,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CityDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="507,1986" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,1865" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="temperature" />
+                      <Variable x:TypeArguments="x:String" Name="day" />
+                      <Variable x:TypeArguments="x:String" Name="climate" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Cities" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[city]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="431,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[&quot;https://www.google.com/search?q=temperature+in+&quot;+city+&quot;&amp;oq=temperature+in+la&amp;aqs=chrome.1.69i57j0i433i512j0i131i433i512j0i512l4j0i433i512j0i512l2.48814j1j7&amp;sourceid=chrome&amp;ie=UTF-8&quot;]" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text '°C'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a8f4288f-096f-4d26-b134-31d280b576ad" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=temperature+in+ladakh&amp;oq=temperature+in+la&amp;aqs=chrome.1.69i57j0i433i512j0i131i433i512j0i512l4j0i433i512j0i512l2.48814j1j7&amp;sourceid=chrome&amp;ie=UTF-8" DesignTimeRectangle="258, 293, 18, 60" ElementType="Text" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' type='' /&gt;" Guid="372ebc6e-15d2-4177-b783-3eb760d7159d" InformativeScreenshot="30bb56953364c9da06e7ab5222c176f5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='temperature in ladakh - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="282, 302, 18, 17" ElementType="Text" FriendlyName="'°C'" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' type='' aaname='°C' check:text='°C' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVEhLY1BQVPlPCzxqMByjGTz//4lXb/+/AOOz/2ehyEFx1c7/t+FqIPjEPEx1KAbPOoWkaN7Z/y9OzYfLweRfvHrwf0sVQgxuEZpa4g0G8dENRZFDdTmRQVH/f8tdTFch8Pz/s9CCg8jIg1iILSxxYeIMhobjEDKYZkFBMPIw5Yk0GIgpS274MdkZhCgMdR0yxhb2pBtMJB41GI5pZLDKfwB6AvsulxoBZAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[temperature]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text '°C'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="a8f4288f-096f-4d26-b134-31d280b576ad" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=temperature+in+Ladakh&amp;oq=temperature+in+la&amp;aqs=chrome.0.69i59j69i57j69i59j0i512j0i20i263i512j0i512j0i131i433i512j0i512j0i433i512j0i512.6637j1j7&amp;sourceid=chrome&amp;ie=UTF-8" DesignTimeRectangle="514, 319, 326, 20" ElementType="Text" FriendlyName="'Wednesday, 2:00 pm'" FullSelectorArgument="&lt;webctrl id='wob_dts' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_dts' tag='DIV' type='' /&gt;" Guid="7bcb9edd-da93-487a-9559-4105277cad9f" InformativeScreenshot="2e4d6215aec5ab8c6d2aed42422a8389.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='temperature in Ladakh - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="290, 302, 18, 17" ElementType="Text" FriendlyName="'°C'" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' type='' aaname='°C' check:text='°C' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVEhLY1BQVPlPCzxqMByjGFy1/cH/F6/egvHt7fUoCiF4/v8TUHn86pANrtr5//bdnf+rwPz6/1vuPvi/pQqhEGbpiXkIMbhFcH0ITJzBIDkMQ1Hl0F1OVFDMOoXdVRBc/3/WPMzgICLyQK7HHZa4MBEGQ8JxKBlMs6AgFHnY5YkymOLkhg+Tn0GIwVDXwdI6enpHxqQZTAIeNRiOaWSwyn8ALLz+YwaKS84AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[day]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text '°C'" sap:VirtualizedContainerService.HintSize="431,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="a8f4288f-096f-4d26-b134-31d280b576ad" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=temperature+in+Trivandrum&amp;oq=te&amp;aqs=chrome.0.69i59l3j69i57j69i60l4.3169j0j7&amp;sourceid=chrome&amp;ie=UTF-8" DesignTimeRectangle="748, 340, 92, 17" ElementType="Text" FriendlyName="'Partly cloudy'" FullSelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' /&gt;" Guid="a78ca59a-a989-48c4-9b6f-83f1d1cf7817" InformativeScreenshot="da6cf99a7135abeff79f2a8e61bc3b72.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='temperature in Trivandrum - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="315, 302, 18, 17" ElementType="Text" FriendlyName="'°C'" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' parentid='wob_wc' tag='SPAN' type='' aaname='°C' check:text='°C' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVEhLY1BQVPlPCzxqMByjGjzv7P8Xr95C8Kn5KApheNYpqDwM3935vwqLOiSD5/8/8ers/1lQPsiAE/MQChWqdv6/jcVCiEUP/m+pQlILxEQaXP9/y11MQ1Hk0FxOXFCAxTFdBcNV8+ZjBAdRkVe1/QHOsMSFiTIYHI5DymCaBQWhyMMmT5zBFCc3fJj8DEIMhroOltZBGEfYk2gw8XjUYDimkcEq/wHGHfy14HAL+AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[climate]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="s:String[]">[arrayOfTemperature]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="s:String[]">[{temperature}]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="s:String[]">[arrayOfDay]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="s:String[]">[{day}]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="s:String[]">[arrayOfClimate]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="s:String[]">[{climate}]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayOfTemperature]" DataTable="[TemperatureDT]" DisplayName=" Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayOfDay]" DataTable="[DayDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayOfClimate]" DataTable="[ClimateDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:WriteRange AddHeaders="True" DataTable="[TemperatureDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="507,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="B1" WorkbookPath="WeatherReportSheet.xlsx" />
+            <ui:WriteRange AddHeaders="True" DataTable="[DayDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="507,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="C1" WorkbookPath="WeatherReportSheet.xlsx" />
+            <ui:WriteRange AddHeaders="True" DataTable="[ClimateDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="507,115" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" StartingCell="D1" WorkbookPath="WeatherReportSheet.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e7b64b3271d09b07596162ca3ffea27c.png" Selector="&lt;html app='chrome.exe' title='New Tab'/&gt;" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
